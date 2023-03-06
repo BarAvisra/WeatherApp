@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="https://kit.fontawesome.com/d2bc648ccc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/d2bc648ccc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <input id="input1" type="text" placeholder="Enter a country/city">
     <button id="btn1">Check Temperature!</button>
     <p id="result"></p> -->
 
-
     <main class="main_container">
-        <section class="upper_container">
+      <section class="upper_container">
+        <div class="upper-upper">
+          <div class="uppper_left_text">
+            <p class="today_date">Today, 24 February</p>
+            <p class="city_country">Tel Aviv</p>
+          </div>
 
-            <div class="upper-upper">
-                <div class="uppper_left_text"> 
-                    <p class="today_date">Today, 24 February</p>
-                    <p class="city_country">Tel Aviv</p>
-                </div>
+          <div class="upper-right-setting-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
 
-                <div class="upper-right-setting-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
+        <div class="down-upper">
+          <div class="left-down-upper">
+            <img class="sunny_icon" src="./images/sunny.svg" alt="#" />
+          </div>
+          <div class="right-down-upper">
+            <p class="temp">14</p>
+            <p class="feels_like_temp">feels like: 9℃</p>
+          </div>
+        </div>
+      </section>
 
-            <div class="down-upper">
-                <div class="left-down-upper"> 
-                    <img class="sunny_icon" src="./images/sunny.svg" alt="#">
-                </div>
-                <div class="right-down-upper">
-                    <p class="temp">
-                        14℃
-                    </p>
-                    <p class="feels_like_temp">
-                        feels like: 9℃
-                    </p>
-                </div>
-            </div>
+      <section class="lower_container">
+        <div class="lower-parameters">
+          <div class="parameter1">1</div>
+          <div class="parameter2">2</div>
+          <div class="parameter4">3</div>
+          <div class="parameter3">4</div>
+          <div class="parameter5">5</div>
+          <div class="parameter6">6</div>
+        </div>
 
-        </section>
-
-        <section class="lower_container">
-
-            <div class="lower-parameters">
-                <div class="parameter1">1</div>
-                <div class="parameter2">2</div>
-                <div class="parameter4">3</div>
-                <div class="parameter3">4</div>
-                <div class="parameter5">5</div>
-                <div class="parameter6">6</div>
-            </div>
-
-            <div class="input-container">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" placeholder="Search for a new sunny location">
-            </div>
-    
-        </section>
-
+        <div class="input-container">
+          <input
+            type="search"
+            placeholder="Search for a new sunny location..."
+          />
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
