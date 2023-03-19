@@ -3,65 +3,60 @@
 }
 
 body {
-  background-color: #28267a;
+  background-color: #e3e2ff;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 section.upper_container {
-  color: white;
-  padding: 40px;
+  color: #3733b4;
+  padding: 80px 40px 60px 40px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
 
   .upper-upper {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: flex-end;
 
-    .uppper_left_text {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-      .city_country {
-        display: flex;
-        font-size: 25px;
-        font-weight: bold;
-      }
+    i.fa-solid.fa-bars {
+      font-size: 20px;
     }
   }
 
-  .down-upper {
+  .middle-upper {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
 
-    .right-down-upper {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-      p.temp {
-        font-size: 80px;
-        font-weight: bold;
-      }
+    h2.city_country {
+      font-size: 25px;
+      color: #8887ba;
+      font-weight: normal;
     }
 
-    img.sunny_icon {
-      width: 100px;
+    p.temp {
+      font-size: 65px;
+      font-weight: bold;
+    }
+  }
+
+  .bottom-upper {
+    display: flex;
+    justify-content: center;
+
+    img.weather_icon {
+      width: 172px;
     }
   }
 }
 
 section.lower_container {
-  background-color: white;
+  background-color: #3733b4;
   color: black;
-  height: 560px;
-  width: 100%;
-  border-radius: 30px 30px 0 0;
+  border-radius: 60px 60px 0 0;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -76,27 +71,19 @@ section.lower_container {
       padding: 20px 10px 20px 45px;
       width: 100%;
       border-radius: 35px;
-      background-color: #28267a;
+      background-color: #e3e2ff;
       border: none;
-      background-image: url(./images/search.png);
+      background-image: url(./icons/magnifying-glass-solid.svg);
       background-repeat: no-repeat;
       background-position: 20px center;
       background-size: 14px;
-      color: white;
+      color: #3733b4;
+      font-weight: normal;
 
       &::placeholder {
-        color: #9c9aec;
+        font-weight: normal;
+        color: #8887ba;
       }
     }
-  }
-
-  .lower-parameters {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    gap: 50px;
-    background-color: #e9e9e9;
-    border-radius: 35px;
-    height: 324px;
   }
 }
