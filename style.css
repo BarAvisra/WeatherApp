@@ -16,32 +16,48 @@ section.upper_container {
   flex-direction: column;
   gap: 60px;
 }
+
 section.upper_container .upper-upper {
   display: flex;
   justify-content: flex-end;
 }
+
 section.upper_container .upper-upper i.fa-solid.fa-bars {
   font-size: 20px;
 }
+
 section.upper_container .middle-upper {
   display: flex;
   gap: 15px;
   flex-direction: column;
   align-items: center;
 }
+
 section.upper_container .middle-upper h2.city_country {
   font-size: 25px;
   color: #8887ba;
   font-weight: normal;
 }
+
 section.upper_container .middle-upper p.temp {
   font-size: 65px;
   font-weight: bold;
 }
+
 section.upper_container .bottom-upper {
   display: flex;
   justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
+
+.weather_description {
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
 section.upper_container .bottom-upper img.weather_icon {
   width: 172px;
 }
@@ -56,28 +72,51 @@ section.lower_container {
   justify-content: space-between;
   flex-grow: 1;
 }
+
 section.lower_container .input-container {
   display: flex;
   justify-content: center;
 }
+
 section.lower_container .input-container input[type=search] {
   padding: 20px 10px 20px 45px;
   width: 100%;
   border-radius: 35px;
   background-color: #e3e2ff;
   border: none;
-  background-image: url(./icons/magnifying-glass-solid.svg);
-  background-repeat: no-repeat;
-  background-position: 20px center;
-  background-size: 14px;
   color: #3733b4;
   font-weight: normal;
 }
+
+section.lower_container .input-container input[type=search]:focus {
+  outline: none;
+}
+
+#searchIcon {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 92%;
+  left: 60px;
+  transform: translateY(-50%);
+  background-image: url(./icons/magnifying-glass-solid.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
 section.lower_container .input-container input[type=search]::-moz-placeholder {
   font-weight: normal;
   color: #8887ba;
 }
+
 section.lower_container .input-container input[type=search]::placeholder {
   font-weight: normal;
   color: #8887ba;
-}/*# sourceMappingURL=style.css.map */
+}
+
+section.bottom-upper.weather_description {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

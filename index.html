@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      defer
-      src="https://kit.fontawesome.com/d2bc648ccc.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- <input id="input1" type="text" placeholder="Enter a country/city">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://kit.fontawesome.com/d2bc648ccc.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <input id="input1" type="text" placeholder="Enter a country/city">
     <button id="btn1">Check Temperature!</button>
     <p id="result"></p> -->
 
-    <section class="upper_container">
-      <div class="upper-upper">
-        <button class="upper-right-setting-icon">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-      <div class="middle-upper">
-        <h2 class="city_country">tel aviv</h2>
-        <p class="temp">13</p>
-      </div>
-      <div class="bottom-upper">
-        <img class="weather_icon" src="./icons/cloudy day_2.svg" alt="#" />
-      </div>
-    </section>
+  <section class="upper_container">
+    <div class="upper-upper">
+      <button class="upper-right-setting-icon">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div class="middle-upper">
+      <h2 class="city_country">Enter your location first</h2>
+      <p class="temp"></p>
+    </div>
+    <div class="bottom-upper">
+      <img class="weather_icon" src="./icons/cloudy day_2.svg" alt="#" />
+      <p class="weather_description"></p>
+    </div>
+  </section>
 
-    <section class="lower_container">
-      <div class="indicators">
-        <div class="indi wind">
-          <div class="indiicon windicon">123</div>
-          <div class="inditext windtext">wind</div>
-        </div>
-        <div class="indi humidity">
-          <div class="indiicon humidityicon">15</div>
-          <div class="inditext humiditytext">humidity</div>
-        </div>
-        <div class="indi maxtemp">
-          <div class="indiicon maxtempicon">15</div>
-          <div class="inditext maxtemptext">humidity</div>
-        </div>
+  <section class="lower_container">
+    <div class="indicators">
+      <div class="indi wind">
+        <div class="indiicon windicon">123</div>
+        <div class="inditext windtext">wind</div>
       </div>
-      <div class="input-container">
-        <input type="search" placeholder="search for a sunny location" />
+      <div class="indi humidity">
+        <div class="indiicon humidityicon">15</div>
+        <div class="inditext humiditytext">humidity</div>
       </div>
-    </section>
-  </body>
+      <div class="indi maxtemp">
+        <div class="indiicon maxtempicon">15</div>
+        <div class="inditext maxtemptext">humidity</div>
+      </div>
+    </div>
+    <div class="input-container">
+      <input id="userInput" type="search" placeholder="search for a sunny location" />
+      <div id="searchIcon"></div>
+    </div>
+  </section>
+</body>
+
 </html>
