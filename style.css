@@ -11,7 +11,7 @@ body {
 
 section.upper_container {
   color: #3733b4;
-  padding: 80px 40px 60px 40px;
+  padding: 80px 40px 100px 40px;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -64,9 +64,8 @@ section.upper_container .bottom-upper img.weather_icon {
 
 section.lower_container {
   background-color: #3733b4;
-  color: black;
   border-radius: 60px 60px 0 0;
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
