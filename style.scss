@@ -11,7 +11,7 @@ body {
 
 section.upper_container {
   color: #3733b4;
-  padding: 80px 40px 100px 40px;
+  padding: 80px 40px 80px 40px;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -22,6 +22,7 @@ section.upper_container {
 
     i.fa-solid.fa-bars {
       font-size: 20px;
+      cursor: pointer;
     }
   }
 
@@ -46,9 +47,18 @@ section.upper_container {
   .bottom-upper {
     display: flex;
     justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 
     img.weather_icon {
       width: 172px;
+    }
+
+    .weather_description {
+      margin-top: 1rem;
+      font-size: 20px;
     }
   }
 }
@@ -59,8 +69,11 @@ section.lower_container {
   padding: 0px 40px 40px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 550px;
 
   .indicators {
     display: flex;
@@ -78,6 +91,7 @@ section.lower_container {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
 
     .indi {
@@ -105,23 +119,40 @@ section.lower_container {
     display: flex;
     justify-content: center;
 
+    #searchIcon {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 77%;
+      left: 60px;
+      transform: translateY(-50%);
+      background-image: url(./icons/magnifying-glass-solid.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+
     input[type="search"] {
       padding: 20px 10px 20px 45px;
       width: 100%;
       border-radius: 35px;
       background-color: #e3e2ff;
       border: none;
-      background-image: url(./icons/magnifying-glass-solid.svg);
-      background-repeat: no-repeat;
-      background-position: 20px center;
-      background-size: 14px;
       color: #3733b4;
       font-weight: normal;
 
       &::placeholder {
         font-weight: normal;
         color: #8887ba;
+
+        &::focus {
+          outline: none;
+        }
       }
     }
+  }
+
+  section.bottom-upper.weather_description {
+    text-align: center;
   }
 }
